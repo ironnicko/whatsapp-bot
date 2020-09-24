@@ -15,7 +15,7 @@ while True:
     msg = input('Enter your message : ')
     count = int(input('Enter the count : '))
 
-    input('Enter anything after scanning QR code')
+    input('Scan QR code and then press Enter to execute')
     
     user = driver.find_element_by_xpath('//span[@title = "{}"]'.format(name))
     user.click()
