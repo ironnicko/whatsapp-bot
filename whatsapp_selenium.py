@@ -3,7 +3,7 @@ os.system('pip install selenium')
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-PATH = "/home/nikhil/Programs/chromedriver"
+PATH = f"{os.getcwd()}\\chromedriver.exe" # remove .exe and install the chrome driver if you're using other operating systems
 driver = webdriver.Chrome(PATH)
 
 driver.get('https://web.whatsapp.com/')
